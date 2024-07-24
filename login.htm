@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNIN</title>
+    <link
+         rel="icon"
+         href="https://www.logolynx.com/images/logolynx/18/186c895563e82742f12419c665f375bf.png"
+         type="image/x-icon"
+       
+    /> 
+    <link
+         rel="icon"
+         href="https://imagepng.org/wp-content/uploads/2017/08/minecraft-icone-icon.png"
+         type="image/x-icon"
+    /> 
+    <link rel="stylesheet" href="login.css"/>
+  
+</head>
+<body>
+    <div class="parent">
+        <img src="blur-photo.com_1721474591.jpg" width="3000px" height="640px"/>
+        <div class="zonelog"></div>
+        <div class="zonelogg">
+            <h3>SIGNIN</h3>
+            <div class="adresse"><h4>Mail address:</h4></div>
+            <div class="zone1">
+                <input type="text" id="email" name="Mail Adresse" placeholder="Mail Adresse" required>
+                <div id="email-error" class="error-message">Please enter a valid email address.</div>
+            </div>
+            <div class="passwrd"><h4>password:</h4></div>
+            <div  class="zone2">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div id="password-error" class="error-message">Password must be at least 6 characters long.</div>
+           </div>
+            <div class="shadow"></div>
+            <div class="zone3">
+                <button type="button" id="sign-in-btn" class="btn-sign-in-button"><h1>SIGNIN</h1></button>
+                
+            </div>
+            <div class="signup">
+                <a href="signup.html"><h4>if you don't have account click here!!!!</h4></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('sign-in-btn').addEventListener('click', function(event) {
+            // Prevent default action
+            event.preventDefault();
+    
+            var valid = true;
+    
+            // Email Validation
+            var emailField = document.getElementById('email');
+            var emailError = document.getElementById('email-error');
+            if (emailField.value === '' || !emailField.value.includes('@')) {
+                valid = false;
+                emailField.classList.add('input-error');
+                emailError.style.display = 'block';
+            } else {
+                emailField.classList.remove('input-error');
+                emailError.style.display = 'none';
+            }
+    
+            // Password Validation
+            var passwordField = document.getElementById('password');
+            var passwordError = document.getElementById('password-error');
+            if (passwordField.value.length < 6) {
+                valid = false;
+                passwordField.classList.add('input-error');
+                passwordError.style.display = 'block';
+            } else {
+                passwordField.classList.remove('input-error');
+                passwordError.style.display = 'none';
+            }
+    
+            // If valid, redirect to the new page
+            if (valid) {
+                window.location.href = 'minecraftweb.html';
+            }
+        });
+    </script>
+    
+ 
+</body>
+</html>

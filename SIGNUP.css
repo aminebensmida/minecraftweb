@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    background-color: rgb(17, 17, 17);
+}
+.parent{
+    display: flex;
+    position: relative;
+}
+.zonelog{
+    background-color: black;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    border-radius: 10px;
+    margin:100px;
+    margin-left: 430px;
+    margin-top: 20px;
+
+    
+}
+.zonelogg{
+    background-color: rgb(20, 20, 20);
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    border-radius: 10px;
+    margin:100px;
+    margin-top: 25px;
+    margin-left: 425px;
+}
+.zonelogg h3{
+    color: rgb(255, 159, 42);
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 200px;
+    width: 0px;
+    font-size: 35px;
+    margin-top: 12px;
+}
+.adresse{
+}
+.adresse h4{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 30px;
+    width: 500px;
+    font-size: 20px;
+    margin-top: 15px;
+    height: 0px;
+}
+
+.passwrd h4{
+    background-color: rgb(20, 20, 20);;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 30px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 15px;
+    height: 0px;
+}
+.zone1{
+    background-color: rgb(20, 20, 20);
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.zone1 input{
+    height: 40px;
+    width: 430px;
+    border-radius: 5px;
+}
+.zone2{
+    background-color: rgb(20, 20, 20);
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.zone2 input{
+    height: 40px;
+    width: 430px;
+    border-radius: 5px;
+}
+
+.zone3{
+    position: absolute;
+    border-radius: 10px ;
+    text-align: center;
+    background-color:green;
+    font-family: "Tiny5", sans-serif;
+    height: 75px;
+    margin-top: -65px;
+    margin-left: 25px;
+    width: 450px;
+}
+.zone3 h1{
+    font-family: "Tiny5", sans-serif;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 20px;
+    
+
+}
+.zone3 button{
+    text-decoration: none;
+    width:455px ;
+    background-color: transparent !important;
+    border: none !important;
+}
+.shadow{
+    position: relative;
+    background-color: rgb(0, 59, 0);
+    width: 450px;
+    height: 70px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.zone2 input{
+    color: white;
+}
+.zone1 input{
+    color: white;
+}
+.fs{
+    background-color: rgb(20, 20, 20);;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 30px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 15px;
+    height: 0px;
+}
+.ls{
+    background-color: rgb(20, 20, 20);;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 240px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: -77px;
+    height: 0px;
+}
+.ls h4{
+    background-color: rgb(20, 20, 20);;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 20px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 0px;
+    height: 0px;
+}
+.cp{
+    background-color: rgb(20, 20, 20);;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 30px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 15px;
+    height: 0px;
+}
+.cp h4{
+    background-color: rgb(20, 20, 20);;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 0px;
+    font-size: 20px;
+    margin-top: 0px;
+    height: 0px;
+}
+.fs h4{
+    background-color: rgb(20, 20, 20);;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: x-larger;
+    margin-left: 0px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 15px;
+    height: 0px;
+}
+.zone0{
+    background-color: rgb(20, 20, 20);
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.zone{
+    background-color: rgb(20, 20, 20);
+    margin-left: 260px;
+    margin-top: 40px;
+}
+.zone0 input{
+    color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+}
+.zone input{
+    color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+}
+.zone4{
+    background-color: rgb(20, 20, 20);
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.zone4 input{
+    color: white;
+    height: 40px;
+    width: 430px;
+    border-radius: 5px;
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+    background-color: transparent;
+    width: 80%;
+}
+.input-error {
+    border: 2px solid red;
+}

@@ -1,0 +1,140 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(136, 64, 35); /* Add your Minecraft image here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff; /* Ensures text is readable on dark backgrounds */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent green */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for tables */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.animated-table {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated-table.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+body{
+    margin:0;
+    overflow-x:hidden;
+    }
+    
+    .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+.come-back{
+    background-color: green;
+    height: 50px;
+    width:100px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+.come-back a{
+    text-decoration: none;
+}
+.come-back h4{
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <link
+         rel="icon"
+         href="https://www.logolynx.com/images/logolynx/18/186c895563e82742f12419c665f375bf.png"
+         type="image/x-icon"
+       
+    />
+    <link
+         rel="icon"
+         href="https://imagepng.org/wp-content/uploads/2017/08/minecraft-icone-icon.png"
+         type="image/x-icon"
+    /> 
+    <link rel="stylesheet" href="SIGNUP.css"/>
+</head>
+<body>
+    <div class="parent">
+        <img src="blur-photo.com_1721474591.jpg" width="3000px" height="640px"/>
+        <div class="zonelog"></div>
+        <div class="zonelogg">
+            <h3>SIGNUP</h3>
+            <div class="fs"><h4>First Name:</h4></div>
+            <div class="zone0">
+                <input type="text" id="first-name" name="First Name" placeholder="First Name" required>
+                    <div id="first-name-error" class="error-message">Please enter your first name.</div>
+                </div>
+            <div class="ls"><h4>Last Name:</h4></div>
+            <div class="zone">
+                <input type="text" id="last-name" name="Last Name" placeholder="Last Name" required>
+                    <div id="last-name-error" class="error-message">Please enter your last name.</div>
+                </div>
+            <div class="adresse"><h4>Mail address:</h4></div>
+            <div class="zone1">
+                <input type="text" id="email" name="Mail Adresse" placeholder="Mail Adresse" required>
+                    <div id="email-error" class="error-message">Please enter a valid email address.</div>
+                </div>
+            <div class="passwrd"><h4>password:</h4></div>
+            <div  class="zone2">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div id="password-error" class="error-message">Password must be at least 6 characters long.</div>
+            </div>
+            <div class="cp"><h4>Confirm Password:</h4></div>
+            <div  class="zone4">
+                <input type="password" id="confirm-password" name="confirm password" placeholder="Confirm Password" required>
+                <div id="confirm-password-error" class="error-message">Passwords do not match.</div>
+             </div>
+            <div class="shadow"></div>
+            <div class="zone3">
+                <button type="button" id="sign-up-btn" class="btn-sign-up-button"><h1>SIGNUP</h1></button>
+                </div>
+        </div>
+    </div>
+     <script>
+        document.getElementById('sign-up-btn').addEventListener('click', function(event) {
+            // Prevent default action
+            event.preventDefault();
+
+            var valid = true;
+
+            // First Name Validation
+            var firstNameField = document.getElementById('first-name');
+            var firstNameError = document.getElementById('first-name-error');
+            if (firstNameField.value === '') {
+                valid = false;
+                firstNameField.classList.add('input-error');
+                firstNameError.style.display = 'block';
+            } else {
+                firstNameField.classList.remove('input-error');
+                firstNameError.style.display = 'none';
+            }
+
+            // Last Name Validation
+            var lastNameField = document.getElementById('last-name');
+            var lastNameError = document.getElementById('last-name-error');
+            if (lastNameField.value === '') {
+                valid = false;
+                lastNameField.classList.add('input-error');
+                lastNameError.style.display = 'block';
+            } else {
+                lastNameField.classList.remove('input-error');
+                lastNameError.style.display = 'none';
+            }
+
+            // Email Validation
+            var emailField = document.getElementById('email');
+            var emailError = document.getElementById('email-error');
+            if (emailField.value === '' || !emailField.value.includes('@')) {
+                valid = false;
+                emailField.classList.add('input-error');
+                emailError.style.display = 'block';
+            } else {
+                emailField.classList.remove('input-error');
+                emailError.style.display = 'none';
+            }
+
+            // Password Validation
+            var passwordField = document.getElementById('password');
+            var passwordError = document.getElementById('password-error');
+            if (passwordField.value.length < 6) {
+                valid = false;
+                passwordField.classList.add('input-error');
+                passwordError.style.display = 'block';
+            } else {
+                passwordField.classList.remove('input-error');
+                passwordError.style.display = 'none';
+            }
+
+            // Confirm Password Validation
+            var confirmPasswordField = document.getElementById('confirm-password');
+            var confirmPasswordError = document.getElementById('confirm-password-error');
+            if (confirmPasswordField.value !== passwordField.value) {
+                valid = false;
+                confirmPasswordField.classList.add('input-error');
+                confirmPasswordError.style.display = 'block';
+            } else {
+                confirmPasswordField.classList.remove('input-error');
+                confirmPasswordError.style.display = 'none';
+            }
+
+            // If valid, redirect to the new page
+            if (valid) {
+                window.location.href = 'minecraftweb.html';
+            }
+        });
+    </script>
+</body>
+</html>

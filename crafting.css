@@ -1,0 +1,66 @@
+*{
+    background-color: rgb(136, 64, 35);
+}
+.head{
+    background-image: url(1347935.jpg);
+    height: 200px;
+    width: 1333px;
+    border-radius: 10px;
+}
+.content{
+    height: 700px;
+    width: 1333px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.footer{
+    background-image: url(1347935.jpg);
+    height: 200px;
+    width: 1333px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+.photo{
+    height: 140px;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+.photo img{
+    border-radius: 10px;
+}
+.photo1 img{
+    position: relative;
+    height: 700px;
+    width: 1333px;
+    border-radius: 10px;
+}
+.tarbousha img{
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    margin-left: 100px;
+    margin-top: -500px;
+}
+.avant{
+    background-color: rgba(8, 8, 8, 0.993);
+    height: 700px;
+    margin-top: -705px;
+    position: relative;
+    border-radius: 10px;
+}
+.ss{
+    background-color: rgba(8, 8, 8, 0.87);
+    height: 200px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+.wp{
+    
+}
+.wp a{
+    position: absolute;
+}
